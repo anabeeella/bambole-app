@@ -1,6 +1,6 @@
 # Implementation Plan - Eyes Category
 
-- [ ] 1. Create eyes pattern data file
+- [x] 1. Create eyes pattern data file
 
   - Create new file `src/data/patterns/eyes.js` with at least two eye options
   - Define eye data structure with id, name, icon, previewImage, pattern, and dimensions
@@ -8,7 +8,7 @@
   - Follow the same data structure pattern used in nose.js and ear.js
   - _Requirements: 4.1, 4.2, 4.3, 4.4_
 
-- [ ] 2. Update patterns.js to include eyes category
+- [x] 2. Update patterns.js to include eyes category
 
   - Import the eyes data from `src/data/patterns/eyes.js`
   - Add new "Ojos" category entry to the characterParts array
@@ -16,7 +16,7 @@
   - Apply the same data mapping logic used for other categories
   - _Requirements: 1.1, 1.3, 5.1, 5.2_
 
-- [ ] 3. Create eye asset images
+- [x] 3. Create eye asset images
 
   - Create icon images for each eye option (eyes-1_icon.png, eyes-2_icon.png)
   - Create preview images for each eye option (eyes-1_prev.png, eyes-2_prev.png)

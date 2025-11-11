@@ -1,5 +1,6 @@
 import body from './patterns/body'
 import hocico from './patterns/nose'
+import eyes from './patterns/eyes'
 import './styles.css'
 
 export const characterParts = [
@@ -15,6 +16,22 @@ export const characterParts = [
             item.previewImage ||
             `src/assets/categories/body/character-${item.id}.png`,
           pattern: item.pattern,
+        })),
+  },
+  {
+    category: 'Ojos',
+    items: Array.isArray(eyes)
+      ? eyes
+      : [eyes].filter(Boolean).map(item => ({
+          id: item.id,
+          name: item.name || `Ojos ${item.id}`,
+          icon:
+            item.icon || `src/assets/categories/eyes/eyes-${item.id}_icon.png`,
+          previewImage:
+            item.previewImage ||
+            `src/assets/categories/eyes/eyes-${item.id}_prev.png`,
+          pattern: item.pattern,
+          dimensions: item.dimensions,
         })),
   },
   {
